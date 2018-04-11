@@ -1,9 +1,19 @@
 {
-  "name": "howell-redux",
-  "version": "1.0.0",
-  "description": "a mini redux lib",
-  "main": "index.js",
-  "author": "howell",
-  "license": "MIT",
-  "dependencies": {}
+  "name": "howell-react-redux",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1"
+  }
 }
