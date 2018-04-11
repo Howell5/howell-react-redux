@@ -1,0 +1,11 @@
+{
+  "name": "howell-redux",
+  "version": "1.0.0",
+  "description": "a mini redux lib",
+  "main": "index.js",
+  "author": "howell",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.3.1"
+  }
+}
