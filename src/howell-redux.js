@@ -65,9 +65,16 @@ const bindActionCreators = (creators, dispatch) =>
 // hack() -----> { type: ADD_GUN, payload: '1', meta: '2' }
 const actionCreatorGenerator = (type, data) => () => ({ type, ...data });
 
+const combineReducers = reducers => (state = {}, action) =>
+  Object.keys(reducers).reduce((nextState, key) => {
+    nextState[key] = reducers[key](state, action);
+    return nextState;
+  }, {});
+
 export {
   createStore,
   bindActionCreators,
   applyMiddleware,
-  actionCreatorGenerator
+  actionCreatorGenerator,
+  combineReducers
 };
